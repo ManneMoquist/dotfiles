@@ -11,6 +11,10 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'omnisharp/omnisharp-vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'StanAngeloff/php.vim'
 
 call vundle#end()
 
@@ -24,3 +28,7 @@ autocmd InsertEnter * :set nornu
 autocmd InsertLeave * :set rnu
 
 noremap ; :
+nnoremap th :tabfirst<CR>
+nnoremap tj :tabnext<CR>
+nnoremap tk :tabprev<CR>
+nnoremap tt :tablast<CR>
