@@ -18,14 +18,16 @@ Plugin 'StanAngeloff/php.vim'
 
 call vundle#end()
 
+set completeopt-=preview
 filetype plugin indent on
 
 :set nu
 :set t_Co=16
-:set relativenumber
+:set tabstop=3
+:set shiftwidth=3
+
 
 autocmd InsertEnter * :set nornu
-autocmd InsertLeave * :set rnu
 
 noremap ; :
 nnoremap th :tabfirst<CR>
