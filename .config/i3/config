@@ -178,8 +178,8 @@ exec xmodmap -e "keysym Caps_Lock = Escape"
 bindsym $mod+p exec setxkbmap us && xmodmap -e "clear lock" && xmodmap -e "keysym Caps_Lock = Escape"
 bindsym $mod+o exec setxkbmap se && xmodmap -e "clear lock" && xmodmap -e "keysym Caps_Lock = Escape"
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +10%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -10%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5%
 
 assign [class="Chromium"] $workspace2
 assign [class="Google-Chrome"] $workspace2
