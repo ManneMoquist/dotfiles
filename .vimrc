@@ -26,7 +26,6 @@ filetype plugin indent on
 :set tabstop=3
 :set shiftwidth=3
 
-
 autocmd InsertEnter * :set nornu
 
 noremap ; :
@@ -34,3 +33,6 @@ nnoremap th :tabfirst<CR>
 nnoremap tj :tabnext<CR>
 nnoremap tk :tabprev<CR>
 nnoremap tt :tablast<CR>
+
+imap jj <esc>
+

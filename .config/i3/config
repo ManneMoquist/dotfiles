@@ -30,7 +30,7 @@ font pango:Ubuntu Mono 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec uxterm 
+bindsym $mod+Return exec uxterm -ls -xrm 'XTerm*selectToClipboard: true'& 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -176,6 +176,7 @@ bar {
 }
 #MANNES ADDITIONS FOR DESKTOP:
 exec xrandr --auto --output HDMI-0 --left-of DVI-I-1
+exec --no-startup-id xsetroot -solid "#000000"
 #NOT FOR DESKTOP
 exec xmodmap -e "clear lock"
 exec xmodmap -e "keysym Caps_Lock = Escape"
@@ -189,7 +190,7 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5%
 assign [class="Chromium"] $workspace2
 assign [class="Google-Chrome"] $workspace2
 assign [class="Spotify"] $workspace10
-assign [class="xterm"] $workspace1
+assign [class="UXTerm"] $workspace1
 
 bindsym $mod+x exec i3lock -c 202020
 
