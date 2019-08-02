@@ -19,6 +19,8 @@ Plugin 'StanAngeloff/php.vim'
 call vundle#end()
 
 set completeopt-=preview
+set path=**
+set tags=tags;/
 filetype plugin indent on
 
 :set nu
@@ -38,7 +40,6 @@ imap jj <esc>
 
 " GUI
 :set guifont=Tamsyn7x14:h9:cAnsi:qDRAFT
-:colo evening
 :set guioptions-=L
 :set guioptions-=r
 :set guioptions-=T
