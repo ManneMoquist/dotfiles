@@ -184,13 +184,12 @@ bindsym $mod+p exec setxkbmap us && xmodmap -e "clear lock" && xmodmap -e "keysy
 bindsym $mod+o exec setxkbmap se && xmodmap -e "clear lock" && xmodmap -e "keysym Caps_Lock = Escape"
 bindsym $mod+space exec setxkbmap us && xmodmap -e "clear lock" && xmodmap -e "keysym Caps_Lock = Escape"
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 
 assign [class="Chromium"] $workspace2
 assign [class="Google-Chrome"] $workspace2
 assign [class="Spotify"] $workspace10
-assign [class="UXTerm"] $workspace1
 
 bindsym $mod+x exec i3lock -c 202020
 
