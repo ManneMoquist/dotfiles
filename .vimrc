@@ -24,6 +24,8 @@ Plugin 'StanAngeloff/php.vim'
 call vundle#end()
 
 set completeopt-=preview
+set path=**
+set tags=tags;/
 filetype plugin indent on
 
 :set nu
