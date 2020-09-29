@@ -23,6 +23,8 @@ call plug#end()
 
 	set updatetime=300
 	set shortmess+=c
+
+	let g:coc_disable_startup_warning=1
 " end coc
 
 set completeopt-=preview
