@@ -20,4 +20,5 @@
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = One dark
 [plugins]

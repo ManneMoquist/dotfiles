@@ -2,26 +2,28 @@ set nocompatible
 filetype on
 syntax on
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'VundleVim/Vundle.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-dispatch'
 
-Plugin 'easymotion/vim-easymotion'
-Plugin 'tpope/vim-dispatch'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'StanAngeloff/php.vim'
 
-" Autocomplete things
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
-Plugin 'omnisharp/omnisharp-vim'
-Plugin 'davidhalter/jedi-vim'
+" ok lets try Coc as a new autocomplete
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'StanAngeloff/php.vim'
+call plug#end()
 
-call vundle#end()
+" needed for coc apparently
+	set nobackup
+	set nowritebackup
+
+	set updatetime=300
+	set shortmess+=c
+" end coc
 
 set completeopt-=preview
 set path=**
@@ -30,7 +32,7 @@ filetype plugin indent on
 
 :set nu
 :set t_Co=16
-:set tabstop=3
+:set tabstop=2
 :set shiftwidth=3
 
 set path=$PWD/**
