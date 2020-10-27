@@ -32,20 +32,31 @@ set path=**
 set tags=tags;/
 filetype plugin indent on
 
+:set rnu
 :set nu
 :set t_Co=16
 :set tabstop=2
 :set shiftwidth=3
 
+:set ignorecase
+:set smartcase
+
 set path=$PWD/**
 
+function DisableHL()
+	 noh
+	 redraw
+endfunction
+
 autocmd InsertEnter * :set nornu
+autocmd InsertEnter * :call DisableHL()
+autocmd InsertLeave * :set rnu
 
 noremap ; :
-nnoremap th :tabfirst<CR>
-nnoremap tj :tabnext<CR>
-nnoremap tk :tabprev<CR>
-nnoremap tt :tablast<CR>
+" nnoremap th :tabfirst<CR>
+" nnoremap tj :tabnext<CR>
+" nnoremap tk :tabprev<CR>
+" nnoremap tt :tablast<CR>
 
 imap jj <esc>
 
