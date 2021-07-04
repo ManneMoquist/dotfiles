@@ -1,21 +1,50 @@
 [global_config]
+  window_state = maximise
   enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
 [keybindings]
 [profiles]
   [[default]]
     cursor_color = "#aaaaaa"
+    font = Source Code Pro Semi-Bold 12
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_lines = 2000
     palette = "#fbf1c7:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#7c6f64:#928374:#9d0006:#79740e:#b57614:#076678:#8f3f71:#427b58:#3c3836"
-  [[One dark]]
-    background_color = "#1e2127"
-    cursor_color = "#676c76"
-    foreground_color = "#5c6370"
+    use_system_font = False
+  [[WarmNeon]]
+    cursor_color = "#aaaaaa"
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_theme_colors = True
+  [[AlienBlood]]
+    background_color = "#0f1610"
+    cursor_color = "#73fa91"
+    font = Source Code Pro Semi-Bold 12
+    foreground_color = "#637d75"
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_lines = 2000
-    palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"
+    palette = "#112616:#7f2b27:#2f7e25:#717f24:#2f6a7f:#47587f:#327f77:#647d75:#3c4812:#e08009:#18e000:#bde000:#00aae0:#0058e0:#00e0c4:#73fa91"
+    use_system_font = False
+  [[Argonaut]]
+    background_color = "#0e1019"
+    cursor_color = "#ff0018"
+    font = Noto Sans Mono Medium 10
+    foreground_color = "#fffaf4"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_lines = 2000
+    palette = "#232323:#ff000f:#8ce10b:#ffb900:#008df8:#6d43a6:#00d8eb:#ffffff:#444444:#ff2740:#abe15b:#ffd242:#0092ff:#9a5feb:#67fff0:#ffffff"
+    use_system_font = False
+  [[Highway]]
+    background_color = "#222225"
+    cursor_color = "#e0d9b9"
+    font = Source Code Pro Semi-Bold 12
+    foreground_color = "#ededed"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_lines = 2000
+    palette = "#000000:#d00e18:#138034:#ffcb3e:#006bb3:#6b2775:#384564:#ededed:#5d504a:#f07e18:#b1d130:#fff120:#4fc2fd:#de0071:#5d504a:#ffffff"
+    use_system_font = False
 [layouts]
   [[default]]
     [[[window0]]]
@@ -24,5 +53,5 @@
     [[[child1]]]
       type = Terminal
       parent = window0
-      profile = One dark
+      profile = Argonaut
 [plugins]
