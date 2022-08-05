@@ -1,0 +1,32 @@
+print("Loading nvim plugins")
+-- local packer = require("packer")
+-- packer.startup(function(use)
+--	 -- use the packer to manage the packer
+-- 	 use("wbthomason/packer.nvim")
+--
+--	 use({
+--			"nvim-treesitter/nvim-treesitter",
+--			run = ":TSUpdate",
+--			requires = {
+--				 "tree-sitter/tree-sitter-go"
+--			},
+--			config = function()
+--				 require("plugins/treesitter")
+--			end,
+--	 })
+--
+--
+--	 -- TELESCOPE
+--	 use({
+--			"nvim-telescope/telescope.nvim",
+--			requires = {
+--				 "nvim-lua/plenary.nvim",
+--				 "BurntSushi/ripgrep",
+--			},
+--	 })
+--	 use ({
+--			"nvim-telescope/telescope-fzf-native.nvim", run = "make"
+--	 })
+--
+--
+-- end)
