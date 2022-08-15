@@ -22,3 +22,8 @@ lsp['rust_analyzer'].setup{
 			}
 	 }
 }
+
+lsp.solargaph.setup{
+	 coq.lsp_ensure_capabilities{ 
+	 on_attach = on_attach,
+}}
