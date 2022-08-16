@@ -11,5 +11,9 @@ inoremap("jj", "<esc>")
 -- Plugin Bindings
 nnoremap("<leader><tab>", ":NvimTreeToggle<CR>")
 
-nnoremap("<leader>lg", telescope.live_grep)
+nnoremap("<leader>fg", telescope.live_grep)
 nnoremap("<leader>ff", telescope.find_files)
+nnoremap("<leader>fb", telescope.buffers)
+nnoremap("<leader>fs", telescope.spell_suggest)
+nnoremap("<leader>fr", telescope.lsp_references)
+nnoremap("<leader>fw", telescope.diagnostics)
