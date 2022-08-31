@@ -32,4 +32,19 @@ return require('packer').startup(function(use)
 	 })
 	 use 'ms-jpq/coq_nvim'
 
+	 -- Lualine for more beautiful status line
+	 use {
+			'nvim-lualine/lualine.nvim',
+			requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+	 }
+	 
+	 --LANGUAGE SPECIFIC PLUGS: GO
+	 use {
+			'ray-x/go.nvim',
+			requires = { 'ray-x/guihua.lua'} -- recommanded if need floating window support
+	 }
+
+	 use 'phaazon/mind.nvim'
+	 
+
 end)
