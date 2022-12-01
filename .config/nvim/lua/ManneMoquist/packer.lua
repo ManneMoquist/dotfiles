@@ -6,6 +6,7 @@ return require('packer').startup(function(use)
 
 	 -- Colorscheme
 	 use 'marko-cerovac/material.nvim'
+	 use 'sainnhe/gruvbox-material'
 
 	 -- QOL Plugins
 	 use 'kylechui/nvim-surround'
@@ -26,11 +27,20 @@ return require('packer').startup(function(use)
 	 }
 
 	 -- LSP and Autocomplete
+	 
+	 use 'williamboman/mason.nvim'
+	 use 'williamboman/mason-lspconfig.nvim'
+
 	 use 'neovim/nvim-lspconfig'
 	 use('nvim-treesitter/nvim-treesitter', {
 			run = ':TSUpdate'
 	 })
+	 use 'nvim-treesitter/nvim-treesitter-context'
 	 use 'ms-jpq/coq_nvim'
+	 -- LSP error window and neater error preview in window
+	 use 'folke/trouble.nvim'
+	 use 'https://git.sr.ht/~whynothugo/lsp_lines.nvim'
+
 
 	 -- Lualine for more beautiful status line
 	 use {
@@ -44,7 +54,13 @@ return require('packer').startup(function(use)
 			requires = { 'ray-x/guihua.lua'} -- recommanded if need floating window support
 	 }
 
+	 -- Mind Plugin, should try to use this one more for notes
 	 use 'phaazon/mind.nvim'
 	 
+	 -- GOD TPOPE HOW COULD I HAVE MISSED THIS PLUG
+	 use 'tpope/vim-surround'
+
+	 -- Gitsigns
+	 use 'lewis6991/gitsigns.nvim'
 
 end)

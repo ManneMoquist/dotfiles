@@ -11,7 +11,7 @@ nnoremap("<C-c>", "<cmd>noh|cclose|redraw<CR>")
 inoremap("jj", "<esc>")
 
 -- Plugin Bindings
-nnoremap("<leader><tab>", ":NvimTreeToggle<CR>")
+nnoremap("<leader><tab>", "<cmd>NvimTreeToggle<CR>")
 
 nnoremap("<leader>fg", telescope.live_grep)
 nnoremap("<leader>ff", telescope.find_files)
